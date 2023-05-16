@@ -41,6 +41,8 @@ public class ReqresTests {
     }
 
     @Test
+    @Tag("api")
+    @Owner("korovinaiyu")
     @DisplayName("Изменение имени пользователя PUT api/users/:id с существующим id")
     void updateUserTestWithLombok() {
         UpdateUserBody updateData = new UpdateUserBody();
@@ -61,6 +63,8 @@ public class ReqresTests {
     }
 
     @Test
+    @Tag("api")
+    @Owner("korovinaiyu")
     @DisplayName("Удаление пользователя DELETE api/users/:id с существующим id")
     void deleteUserTestWithLombok() {
         step("Удаление пользователя c id " + USER, () ->
@@ -73,6 +77,8 @@ public class ReqresTests {
     }
 
     @Test
+    @Tag("api")
+    @Owner("korovinaiyu")
     @DisplayName("Регистрация пользователя POST api/register без password")
     void registerMissingPasswordTestWithLombok() {
         RegisterUserBody registerData = new RegisterUserBody();
